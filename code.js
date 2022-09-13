@@ -51,7 +51,8 @@ function renderizarDatosUsuario() {
   let i = 0;
   cardHeader.forEach(date => {
     date.textContent = userDate[i][1]
-    if(userDate[i][1] == true) {
+    
+    if(userDate[i][1]) {
       date.textContent = 'si'
     } else if(userDate[i][1] == false) {
       date.textContent = 'no'
